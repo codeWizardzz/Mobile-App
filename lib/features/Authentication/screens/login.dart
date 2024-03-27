@@ -9,9 +9,11 @@ class LoginScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Image.asset(
-          Constants.logoPath,
-          height: 40,
+        title: Center(
+          child: Image.asset(
+            Constants.logoPath,
+            height: 40,
+          ),
         ),
         actions: [
           TextButton(
