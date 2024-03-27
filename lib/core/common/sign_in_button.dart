@@ -20,7 +20,7 @@ class SignInButton extends StatelessWidget {
           style: TextStyle(fontSize: 18),
         ),
         style: ElevatedButton.styleFrom(
-          backgroundColor: Pallete.greyColor,
+          backgroundColor: Pallete.brownColor,
           minimumSize: const Size(double.infinity, 50),
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(20),

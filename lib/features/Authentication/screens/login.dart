@@ -38,6 +38,8 @@ class LoginScreen extends StatelessWidget {
           ),
           const SizedBox(height: 20),
           const SignInButton(),
+          const SizedBox(height: 8),
+          const SignInButton(),
           // const Responsive(child: SignInButton()),
         ],
       ),
