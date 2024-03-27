@@ -9,11 +9,10 @@ class LoginScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Center(
-          child: Image.asset(
-            Constants.logoPath,
-            height: 40,
-          ),
+        title: Image.asset(
+          Constants.logoPath,
+          height: 65,
+          width: 200,
         ),
         actions: [
           TextButton(
@@ -29,15 +28,6 @@ class LoginScreen extends StatelessWidget {
       ),
       body: Column(
         children: [
-          const SizedBox(height: 30),
-          const Text(
-            'Dive into anything',
-            style: TextStyle(
-              fontSize: 24,
-              fontWeight: FontWeight.bold,
-              letterSpacing: 0.5,
-            ),
-          ),
           const SizedBox(height: 30),
           Padding(
             padding: const EdgeInsets.all(8.0),
