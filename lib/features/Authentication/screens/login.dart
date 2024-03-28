@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:gazeta/core/common/sign_in_button.dart';
 import 'package:gazeta/core/constants/constants.dart';
 
+import '../../../core/common/sign_in_us_guest.dart';
+
 class LoginScreen extends StatelessWidget {
   const LoginScreen({Key? key}) : super(key: key);
 
@@ -9,37 +11,40 @@ class LoginScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        backgroundColor: Colors.black,
+        toolbarHeight: 100,
         title: Image.asset(
           Constants.logoPath,
-          height: 65,
-          width: 200,
+          height: 95,
+          width: 400,
         ),
-        actions: [
-          TextButton(
-            onPressed: () {},
-            child: const Text(
-              'Skip',
-              style: TextStyle(
-                fontWeight: FontWeight.bold,
-              ),
-            ),
-          ),
-        ],
+        // actions: [
+        //   TextButton(
+        //     onPressed: () {},
+        //     child: const Text(
+        //       'Skip',
+        //       style: TextStyle(
+        //         fontWeight: FontWeight.bold,
+        //       ),
+        //     ),
+        //   ),
+        // ],
       ),
       body: Column(
+        mainAxisSize: MainAxisSize.min,
         children: [
-          const SizedBox(height: 30),
+          // const SizedBox(height: 30),
           Padding(
-            padding: const EdgeInsets.all(8.0),
+            padding: const EdgeInsets.all(2.0),
             child: Image.asset(
               Constants.loginEmotePath,
-              height: 400,
+              height: 500,
             ),
           ),
-          const SizedBox(height: 20),
+          // const SizedBox(height: 20),
           const SignInButton(),
           const SizedBox(height: 8),
-          const SignInButton(),
+          const SignInAsGuest(),
           // const Responsive(child: SignInButton()),
         ],
       ),
