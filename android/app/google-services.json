@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "657232052630",
+    "project_id": "gazeta-6aabf",
+    "storage_bucket": "gazeta-6aabf.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:657232052630:android:ef94c40c7c924107921db7",
+        "android_client_info": {
+          "package_name": "com.example.gazeta"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAzA4n87QnhXheUszBCYzzLM91vV_wTojs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
