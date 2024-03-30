@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:gazeta/core/common/sign_in_button.dart';
 import 'package:gazeta/core/constants/constants.dart';
+import 'package:gazeta/features/Authentication/controller/auth_control.dart';
 
 import '../../../core/common/sign_in_us_guest.dart';
 
