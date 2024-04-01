@@ -67,6 +67,7 @@ class DefaultFirebaseOptions {
     messagingSenderId: '657232052630',
     projectId: 'gazeta-6aabf',
     storageBucket: 'gazeta-6aabf.appspot.com',
+    iosClientId: '657232052630-nauafagp7c9hqj7ui1vv76ffmsn7tlbn.apps.googleusercontent.com',
     iosBundleId: 'com.example.gazeta',
   );
 
@@ -76,6 +77,7 @@ class DefaultFirebaseOptions {
     messagingSenderId: '657232052630',
     projectId: 'gazeta-6aabf',
     storageBucket: 'gazeta-6aabf.appspot.com',
+    iosClientId: '657232052630-ja37269qtmsu70l3kh532mj0ibqhvne3.apps.googleusercontent.com',
     iosBundleId: 'com.example.gazeta.RunnerTests',
   );
 }

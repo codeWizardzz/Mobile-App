@@ -12,7 +12,12 @@
           "package_name": "com.example.gazeta"
         }
       },
-      "oauth_client": [],
+      "oauth_client": [
+        {
+          "client_id": "657232052630-heh48rhgq2nn6tbkuns8ljo0ueh1qj5a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
       "api_key": [
         {
           "current_key": "AIzaSyAzA4n87QnhXheUszBCYzzLM91vV_wTojs"
@@ -20,7 +25,19 @@
       ],
       "services": {
         "appinvite_service": {
-          "other_platform_oauth_client": []
+          "other_platform_oauth_client": [
+            {
+              "client_id": "657232052630-heh48rhgq2nn6tbkuns8ljo0ueh1qj5a.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "657232052630-ja37269qtmsu70l3kh532mj0ibqhvne3.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.gazeta.RunnerTests"
+              }
+            }
+          ]
         }
       }
     }
