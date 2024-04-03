@@ -1,40 +1,40 @@
 {
   "project_info": {
-    "project_number": "657232052630",
-    "project_id": "gazeta-6aabf",
-    "storage_bucket": "gazeta-6aabf.appspot.com"
+    "project_number": "321448366756",
+    "project_id": "gazetah-e93fb",
+    "storage_bucket": "gazetah-e93fb.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:657232052630:android:ef94c40c7c924107921db7",
+        "mobilesdk_app_id": "1:321448366756:android:22556c0036892772828c31",
         "android_client_info": {
           "package_name": "com.example.gazeta"
         }
       },
       "oauth_client": [
         {
-          "client_id": "657232052630-heh48rhgq2nn6tbkuns8ljo0ueh1qj5a.apps.googleusercontent.com",
+          "client_id": "321448366756-bbdqkekb06nqkdsk9ssb4knisidd5lc7.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyAzA4n87QnhXheUszBCYzzLM91vV_wTojs"
+          "current_key": "AIzaSyBOqwRanLFTTW6ksQxqcrvDKxQDBE_JaDM"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "657232052630-heh48rhgq2nn6tbkuns8ljo0ueh1qj5a.apps.googleusercontent.com",
+              "client_id": "321448366756-bbdqkekb06nqkdsk9ssb4knisidd5lc7.apps.googleusercontent.com",
               "client_type": 3
             },
             {
-              "client_id": "657232052630-ja37269qtmsu70l3kh532mj0ibqhvne3.apps.googleusercontent.com",
+              "client_id": "321448366756-0f85ofogk8rjhv99v3npu5vjt0h4r8l0.apps.googleusercontent.com",
               "client_type": 2,
               "ios_info": {
-                "bundle_id": "com.example.gazeta.RunnerTests"
+                "bundle_id": "com.example.gazeta"
               }
             }
           ]

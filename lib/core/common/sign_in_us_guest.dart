@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:gazeta/core/constants/constants.dart';
-import 'package:gazeta/theme/pallet.dart';
+import 'package:gazeta/theme/pallete.dart';
 
 class SignInAsGuest extends StatelessWidget {
   const SignInAsGuest({Key? key}) : super(key: key);
@@ -20,7 +20,7 @@ class SignInAsGuest extends StatelessWidget {
           style: TextStyle(fontSize: 18, color: Colors.white),
         ),
         style: ElevatedButton.styleFrom(
-          backgroundColor: Pallete.brownColor,
+          backgroundColor: Pallete.blackColor,
           minimumSize: const Size(double.infinity, 50),
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(20),

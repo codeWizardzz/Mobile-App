@@ -25,7 +25,10 @@ class DefaultFirebaseOptions {
       case TargetPlatform.iOS:
         return ios;
       case TargetPlatform.macOS:
-        return macos;
+        throw UnsupportedError(
+          'DefaultFirebaseOptions have not been configured for macos - '
+          'you can reconfigure this by running the FlutterFire CLI again.',
+        );
       case TargetPlatform.windows:
         throw UnsupportedError(
           'DefaultFirebaseOptions have not been configured for windows - '
@@ -44,40 +47,30 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'AIzaSyCoDLbYozK8H3TOECvogSrvUmkLQvkbXtI',
-    appId: '1:657232052630:web:aab8a5c4a66ab0e8921db7',
-    messagingSenderId: '657232052630',
-    projectId: 'gazeta-6aabf',
-    authDomain: 'gazeta-6aabf.firebaseapp.com',
-    storageBucket: 'gazeta-6aabf.appspot.com',
-    measurementId: 'G-V9RKDS5RRT',
+    apiKey: 'AIzaSyDALQIzbGXFQyyqju7HFB-UmR-JMbXLjiE',
+    appId: '1:321448366756:web:e2c889da6805e8d8828c31',
+    messagingSenderId: '321448366756',
+    projectId: 'gazetah-e93fb',
+    authDomain: 'gazetah-e93fb.firebaseapp.com',
+    storageBucket: 'gazetah-e93fb.appspot.com',
+    measurementId: 'G-TR8MYQDTJX',
   );
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyAzA4n87QnhXheUszBCYzzLM91vV_wTojs',
-    appId: '1:657232052630:android:ef94c40c7c924107921db7',
-    messagingSenderId: '657232052630',
-    projectId: 'gazeta-6aabf',
-    storageBucket: 'gazeta-6aabf.appspot.com',
+    apiKey: 'AIzaSyBOqwRanLFTTW6ksQxqcrvDKxQDBE_JaDM',
+    appId: '1:321448366756:android:22556c0036892772828c31',
+    messagingSenderId: '321448366756',
+    projectId: 'gazetah-e93fb',
+    storageBucket: 'gazetah-e93fb.appspot.com',
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyAcEPVMOlC4sxDvrRgzyuJxp1NWo1RTQpY',
-    appId: '1:657232052630:ios:756364feaf5b3562921db7',
-    messagingSenderId: '657232052630',
-    projectId: 'gazeta-6aabf',
-    storageBucket: 'gazeta-6aabf.appspot.com',
-    iosClientId: '657232052630-nauafagp7c9hqj7ui1vv76ffmsn7tlbn.apps.googleusercontent.com',
+    apiKey: 'AIzaSyB3HNVc2Gpqftnk3hS9zdWDqCqevWIReDg',
+    appId: '1:321448366756:ios:729b135c96faddaa828c31',
+    messagingSenderId: '321448366756',
+    projectId: 'gazetah-e93fb',
+    storageBucket: 'gazetah-e93fb.appspot.com',
+    iosClientId: '321448366756-0f85ofogk8rjhv99v3npu5vjt0h4r8l0.apps.googleusercontent.com',
     iosBundleId: 'com.example.gazeta',
-  );
-
-  static const FirebaseOptions macos = FirebaseOptions(
-    apiKey: 'AIzaSyAcEPVMOlC4sxDvrRgzyuJxp1NWo1RTQpY',
-    appId: '1:657232052630:ios:e14e67d2e7ce96c9921db7',
-    messagingSenderId: '657232052630',
-    projectId: 'gazeta-6aabf',
-    storageBucket: 'gazeta-6aabf.appspot.com',
-    iosClientId: '657232052630-ja37269qtmsu70l3kh532mj0ibqhvne3.apps.googleusercontent.com',
-    iosBundleId: 'com.example.gazeta.RunnerTests',
   );
 }
