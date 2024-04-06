@@ -5,10 +5,13 @@ import 'package:gazeta/features/auth/controller/auth_controller.dart';
 import 'package:gazeta/theme/pallete.dart';
 
 class SignInButton extends ConsumerWidget {
-  const SignInButton({Key? key}) : super(key: key);
+  final bool isFromLogin;
+  const SignInButton({Key? key, this.isFromLogin = true}) : super(key: key);
 
-  void signInWithGoogle(WidgetRef ref) {
-    ref.read(authControllerProvider);
+  void signInWithGoogle(BuildContext context, WidgetRef ref) {
+    ref
+        .read(authControllerProvider.notifier)
+        .signInWithGoogle(context, isFromLogin);
   }
 
   @override
@@ -16,7 +19,7 @@ class SignInButton extends ConsumerWidget {
     return Padding(
       padding: EdgeInsets.fromLTRB(18.0, 0.0, 18.0, 0.0),
       child: ElevatedButton.icon(
-        onPressed: () => signInWithGoogle(ref),
+        onPressed: () => signInWithGoogle(context, ref),
         icon: Image.asset(
           Constants.googlePath,
           width: 35,
@@ -26,7 +29,7 @@ class SignInButton extends ConsumerWidget {
           style: TextStyle(fontSize: 18, color: Colors.white),
         ),
         style: ElevatedButton.styleFrom(
-          backgroundColor: Pallete.blackColor,
+          backgroundColor: Color.fromARGB(255, 4, 209, 228),
           minimumSize: const Size(double.infinity, 50),
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(20),

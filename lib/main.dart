@@ -11,7 +11,6 @@ import 'package:gazeta/router.dart';
 import 'package:gazeta/theme/pallete.dart';
 import 'package:routemaster/routemaster.dart';
 
-// running the premade code
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp(
