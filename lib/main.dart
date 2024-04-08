@@ -10,12 +10,21 @@ import 'package:gazeta/models/user_model.dart';
 import 'package:gazeta/router.dart';
 import 'package:gazeta/theme/pallete.dart';
 import 'package:routemaster/routemaster.dart';
+import 'package:gazeta/features/home/screens/splash_screen.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp(
     options: DefaultFirebaseOptions.currentPlatform,
   );
+  // Display the imported SplashScreen for 3 seconds
+  runApp(
+    MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: SplashScreen(),
+    ),
+  );
+  await Future.delayed(Duration(seconds: 5));
   runApp(
     const ProviderScope(
       child: MyApp(),
