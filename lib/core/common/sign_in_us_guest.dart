@@ -20,7 +20,7 @@ class SignInAsGuest extends StatelessWidget {
           style: TextStyle(fontSize: 18, color: Colors.white),
         ),
         style: ElevatedButton.styleFrom(
-          backgroundColor: Color.fromARGB(255, 20, 239, 254),
+          backgroundColor: Color(0xFFE4A839),
           minimumSize: const Size(double.infinity, 50),
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(20),
