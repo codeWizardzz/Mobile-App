@@ -14,6 +14,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "321448366756-0m3t403um0nnbhjsnrhb1lqulcovsgft.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.gazeta",
+            "certificate_hash": "828c7809f329f1b3f70019ead2372fc48d4ddee1"
+          }
+        },
+        {
           "client_id": "321448366756-bbdqkekb06nqkdsk9ssb4knisidd5lc7.apps.googleusercontent.com",
           "client_type": 3
         }
