@@ -24,7 +24,7 @@ void main() async {
       home: SplashScreen(),
     ),
   );
-  await Future.delayed(Duration(seconds: 5));
+  await Future.delayed(Duration(seconds: 10));
   runApp(
     const ProviderScope(
       child: MyApp(),
