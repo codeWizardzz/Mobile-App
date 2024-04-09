@@ -27,14 +27,10 @@ class SplashScreen extends StatelessWidget {
           // Text below the Lottie animation
           Padding(
             padding: const EdgeInsets.only(top: 0.0),
-            child: Text(
-              'GazetaHub',
-              style: TextStyle(
-                fontSize: 34,
-                color: Color(0xFF7E6520), // Set text color to 7E6520
-                fontFamily:
-                    'DancingScript', // Set font family to Dancing Script
-              ),
+            child: Image.asset(
+              'assets/images/logo.png', // Replace 'your_image.png' with the path to your image
+              height: 100, // Adjust the height as needed
+              width: 200, // Adjust the width as needed
             ),
           ),
         ],
