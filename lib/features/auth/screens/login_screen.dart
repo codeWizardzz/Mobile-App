@@ -20,18 +20,6 @@ class LoginScreen extends ConsumerWidget {
   Widget build(BuildContext context, WidgetRef ref) {
     final isLoading = ref.watch(authControllerProvider);
 
-    final controller = TypeWriterController.fromValue(
-      TypeWriterValue([
-        "Stay Updated!",
-        "Get Informed!",
-        "Join the Discussion!",
-        "Explore News!",
-        "Discover Stories!",
-      ]),
-      duration: const Duration(milliseconds: 100),
-      repeat: true
-    );
- 
     return Scaffold(
       appBar: AppBar(
         // backgroundColor: Colors.black,
@@ -76,7 +64,6 @@ class LoginScreen extends ConsumerWidget {
                 const SizedBox(height: 8),
                 const Responsive(child: SignInAsGuest()),
               ],
-              
             ),
     );
   }
