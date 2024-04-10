@@ -109,9 +109,7 @@ class AuthRepository {
         karma: 0,
         awards: [],
       );
-
       await _users.doc(userCredential.user!.uid).set(userModel.toMap());
-
       return right(userModel);
     } on FirebaseException catch (e) {
       throw e.message!;

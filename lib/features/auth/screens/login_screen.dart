@@ -7,14 +7,13 @@ import 'package:gazeta/core/common/sign_in_us_guest.dart';
 import 'package:gazeta/core/constants/constants.dart';
 import 'package:gazeta/features/auth/controller/auth_controller.dart';
 import 'package:gazeta/responsive/responsive.dart';
-import 'package:typewritertext/typewritertext.dart';
 
 class LoginScreen extends ConsumerWidget {
   const LoginScreen({Key? key}) : super(key: key);
 
-  void signInAsGuest(WidgetRef ref, BuildContext context) {
-    ref.read(authControllerProvider.notifier).signInAsGuest(context);
-  }
+  // void signInAsGuest(WidgetRef ref, BuildContext context) {
+  //   ref.read(authControllerProvider.notifier).signInAsGuest(context);
+  // }
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
