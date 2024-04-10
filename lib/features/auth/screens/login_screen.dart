@@ -1,6 +1,6 @@
-import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 import 'package:gazeta/core/common/loader.dart';
 import 'package:gazeta/core/common/sign_in_button.dart';
 import 'package:gazeta/core/common/sign_in_us_guest.dart';
@@ -34,7 +34,7 @@ class LoginScreen extends ConsumerWidget {
  
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.black,
+        // backgroundColor: Colors.black,
         toolbarHeight: 100,
         title: Image.asset(
           Constants.logoPath,
@@ -65,8 +65,9 @@ class LoginScreen extends ConsumerWidget {
                 const SizedBox(height: 30),
                 Padding(
                   padding: const EdgeInsets.all(8.0),
-                  child: Image.asset(
-                    Constants.loginEmotePath,
+                  child: SvgPicture.asset(
+                    // Constants.loginEmotePath,
+                    Constants.signuppath,
                     height: 400,
                   ),
                 ),
@@ -75,6 +76,7 @@ class LoginScreen extends ConsumerWidget {
                 const SizedBox(height: 8),
                 const Responsive(child: SignInAsGuest()),
               ],
+              
             ),
     );
   }
