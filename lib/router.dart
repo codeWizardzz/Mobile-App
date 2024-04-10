@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:gazeta/features/auth/screens/login_screen.dart';
+import 'package:gazeta/features/auth/screens/onboarding.dart';
 import 'package:gazeta/features/community/screens/add_mods_screen.dart';
 import 'package:gazeta/features/community/screens/community_screen.dart';
 import 'package:gazeta/features/community/screens/create_community_screen.dart';
@@ -13,8 +14,12 @@ import 'package:gazeta/features/user_profile/screens/edit_profile_screen.dart';
 import 'package:gazeta/features/user_profile/screens/user_profile_screen.dart';
 import 'package:routemaster/routemaster.dart';
 
+// final loggedOutRoute = RouteMap(routes: {
+//   '/': (_) => const MaterialPage(child: LoginScreen()),
+// });
 final loggedOutRoute = RouteMap(routes: {
-  '/': (_) => const MaterialPage(child: LoginScreen()),
+  '/': (_) => const MaterialPage(child: onboarding()),
+  '/login': (_) => const MaterialPage(child: LoginScreen()),
 });
 
 final loggedInRoute = RouteMap(
