@@ -24,7 +24,7 @@ void main() async {
       home: SplashScreen(),
     ),
   );
-  await Future.delayed(Duration(seconds: 10));
+  await Future.delayed(Duration(seconds: 5));
   runApp(
     const ProviderScope(
       child: MyApp(),
@@ -38,7 +38,6 @@ class MyApp extends ConsumerStatefulWidget {
   @override
   ConsumerState<ConsumerStatefulWidget> createState() => _MyAppState();
 }
-
 class _MyAppState extends ConsumerState<MyApp> {
   UserModel? userModel;
 
