@@ -14,7 +14,6 @@ class CreateCommunityScreen extends ConsumerStatefulWidget {
 
 class _CreateCommunityScreenState extends ConsumerState<CreateCommunityScreen> {
   final communityNameController = TextEditingController();
-
   @override
   void dispose() {
     super.dispose();
@@ -51,7 +50,7 @@ class _CreateCommunityScreenState extends ConsumerState<CreateCommunityScreen> {
                     TextField(
                       controller: communityNameController,
                       decoration: const InputDecoration(
-                        hintText: 'r/Community_name',
+                        hintText: 'g/Community_name',
                         filled: true,
                         border: InputBorder.none,
                         contentPadding: EdgeInsets.all(18),

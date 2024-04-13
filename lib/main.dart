@@ -38,6 +38,7 @@ class MyApp extends ConsumerStatefulWidget {
   @override
   ConsumerState<ConsumerStatefulWidget> createState() => _MyAppState();
 }
+
 class _MyAppState extends ConsumerState<MyApp> {
   UserModel? userModel;
 

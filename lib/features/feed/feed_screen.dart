@@ -9,7 +9,6 @@ import 'package:gazeta/features/post/controller/post_controller.dart';
 
 class FeedScreen extends ConsumerWidget {
   const FeedScreen({super.key});
-
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final user = ref.watch(userProvider)!;

@@ -1,16 +1,22 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:gazeta/core/constants/constants.dart';
+import 'package:gazeta/features/auth/controller/auth_controller.dart';
 import 'package:gazeta/theme/pallete.dart';
 
-class SignInAsGuest extends StatelessWidget {
+class SignInAsGuest extends ConsumerWidget {
   const SignInAsGuest({Key? key}) : super(key: key);
 
+  void signInAsGuest(BuildContext context, WidgetRef ref) {
+    ref.read(authControllerProvider.notifier).signInAsGuest(context);
+  }
+
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context, WidgetRef ref) {
     return Padding(
       padding: EdgeInsets.fromLTRB(18.0, 10.0, 18.0, 0.0),
       child: ElevatedButton.icon(
-        onPressed: () {},
+        onPressed: () => signInAsGuest(context, ref),
         icon: Image.asset(
           Constants.profilePath,
           width: 35,

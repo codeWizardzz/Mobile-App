@@ -22,6 +22,14 @@
           }
         },
         {
+          "client_id": "321448366756-v44djfqb73l8p2vcsuvfdfd7omhdoo7b.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.gazeta",
+            "certificate_hash": "72ee93bd22807aedbf4f296fb3fcc875b713019b"
+          }
+        },
+        {
           "client_id": "321448366756-bbdqkekb06nqkdsk9ssb4knisidd5lc7.apps.googleusercontent.com",
           "client_type": 3
         }
