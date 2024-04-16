@@ -119,7 +119,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
     Positioned(
       bottom: 50,
       left: 0,
-      right: 0,
+      right: 10,
       child: Align(
         alignment: Alignment(0, 0),
         child: SmoothPageIndicator(
