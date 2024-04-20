@@ -95,7 +95,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
     ),
     Positioned(
       top: 30,
-      right: 20,
+      right: 15,
       child: ElevatedButton(
         onPressed: () {
           // Navigate to login screen
