@@ -50,7 +50,7 @@ class _SplashScreenState extends State<SplashScreen>
               return Transform.rotate(
                 angle: _animation.value,
                 child: Image.asset(
-                  'assets/images/logo.png',
+                  'assets/images/logos.png',
                   height: 400,
                   width: 400,
                 ),
