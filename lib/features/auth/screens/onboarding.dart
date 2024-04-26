@@ -20,22 +20,7 @@ class onboarding extends StatelessWidget {
     return Scaffold(
       body: Stack(
         children: [
-          // Onboarding screen
           OnboardingScreen(),
-          // Sign-in buttons
-          // Positioned(
-          //   bottom: 20,
-          //   left: 0,
-          //   right: 0,
-          //   child: Column(
-          //     mainAxisAlignment: MainAxisAlignment.end,
-          //     children: [
-          //       const Responsive(child: SignInButton()),
-          //       const SizedBox(height: 8),
-          //       const Responsive(child: SignInAsGuest()),
-          //     ],
-          //   ),
-          // ),
         ],
       ),
     );

@@ -75,6 +75,7 @@ flutter:
   assets:
     - assets/images/google.png
     - assets/images/logo.png
+    - assets/images/logos.png
     - assets/images/login.png
     - assets/images/profile.png
     - assets/lottie/splashscreen.json
