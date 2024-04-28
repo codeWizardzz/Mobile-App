@@ -10,7 +10,7 @@ import 'package:gazeta/models/user_model.dart';
 import 'package:gazeta/router.dart';
 import 'package:gazeta/theme/pallete.dart';
 import 'package:routemaster/routemaster.dart';
-import 'package:gazeta/features/home/screens/splash_screen.dart';
+import 'package:gazeta/features/auth/screens/splash_screen.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
