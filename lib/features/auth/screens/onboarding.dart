@@ -126,19 +126,19 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
     required String text,
   }) {
     return Container(
-      color: Color(0xFFE4A839),
+      color: const Color(0xFFE4A839),
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Text(
             text,
-            style: TextStyle(
+            style: const TextStyle(
               fontSize: 24,
               fontWeight: FontWeight.bold,
               color: Colors.white,
             ),
           ),
-          SizedBox(height: 20),
+          const SizedBox(height: 20),
           SvgPicture.asset(
             imagePath,
             height: 200,
