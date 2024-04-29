@@ -11,9 +11,6 @@ import 'package:gazeta/responsive/responsive.dart';
 class LoginScreen extends ConsumerWidget {
   const LoginScreen({Key? key}) : super(key: key);
 
-  // void signInAsGuest(WidgetRef ref, BuildContext context) {
-  //   ref.read(authControllerProvider.notifier).signInAsGuest(context);
-  // }
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
@@ -35,20 +32,6 @@ class LoginScreen extends ConsumerWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               crossAxisAlignment: CrossAxisAlignment.center,
               children: <Widget>[
-                // const SizedBox(height: 25),
-                // TypeWriter(
-                //   controller: controller,
-                //   builder: (context, value) {
-                //     return Text(
-                //       value.text,
-                //       style: TextStyle(
-                //         fontSize: 24,
-                //         fontWeight: FontWeight.bold,
-                //         letterSpacing: 0.5,
-                //       ),
-                //     );
-                //   },
-                // ),
                 const SizedBox(height: 30),
                 Padding(
                   padding: const EdgeInsets.all(8.0),
