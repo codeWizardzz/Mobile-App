@@ -11,6 +11,7 @@ import 'package:gazeta/core/providers/firebase_providers.dart';
 import 'package:gazeta/core/type_defs.dart';
 import 'package:gazeta/models/user_model.dart';
 
+/// Provider for the authentication repository.
 final authRepositoryProvider = Provider(
   (ref) => AuthRepository(
     firestore: ref.read(firestoreProvider),
@@ -19,6 +20,7 @@ final authRepositoryProvider = Provider(
   ),
 );
 
+/// Repository for handling authentication operations.
 class AuthRepository {
   final FirebaseFirestore _firestore;
   final FirebaseAuth _auth;

@@ -5,8 +5,9 @@ import 'package:gazeta/core/utils.dart';
 import 'package:gazeta/features/auth/repository/auth_repository.dart';
 import 'package:gazeta/models/user_model.dart';
 
+/// Provider for managing the current user state.
 final userProvider = StateProvider<UserModel?>((ref) => null);
-
+/// Provider for managing authentication operations.
 final authControllerProvider = StateNotifierProvider<AuthController, bool>(
   (ref) => AuthController(
     authRepository: ref.watch(authRepositoryProvider),
@@ -14,16 +15,19 @@ final authControllerProvider = StateNotifierProvider<AuthController, bool>(
   ),
 );
 
+/// Provider for providing the stream of authentication state changes.
 final authStateChangeProvider = StreamProvider((ref) {
   final authController = ref.watch(authControllerProvider.notifier);
   return authController.authStateChange;
 });
 
+/// Provider for fetching user data based on UID.
 final getUserDataProvider = StreamProvider.family((ref, String uid) {
   final authController = ref.watch(authControllerProvider.notifier);
   return authController.getUserData(uid);
 });
 
+/// Controller for managing authentication operations.
 class AuthController extends StateNotifier<bool> {
   final AuthRepository _authRepository;
   final Ref _ref;

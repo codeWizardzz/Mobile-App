@@ -8,6 +8,7 @@ import 'package:gazeta/core/constants/constants.dart';
 import 'package:gazeta/features/auth/controller/auth_controller.dart';
 import 'package:gazeta/responsive/responsive.dart';
 
+//login screen is built here
 class LoginScreen extends ConsumerWidget {
   const LoginScreen({Key? key}) : super(key: key);
 
@@ -18,7 +19,6 @@ class LoginScreen extends ConsumerWidget {
 
     return Scaffold(
       appBar: AppBar(
-        // backgroundColor: Colors.black,
         toolbarHeight: 100,
         title: Image.asset(
           Constants.logoPath,
