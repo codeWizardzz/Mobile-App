@@ -4,9 +4,6 @@ import 'package:flutter_svg/flutter_svg.dart';
 import 'package:gazeta/features/auth/controller/auth_controller.dart';
 import 'package:routemaster/routemaster.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
-import 'package:gazeta/core/common/sign_in_button.dart';
-import 'package:gazeta/core/common/sign_in_us_guest.dart';
-import 'package:gazeta/responsive/responsive.dart';
 
 class onboarding extends StatelessWidget {
   const onboarding({Key? key}) : super(key: key);
@@ -88,7 +85,6 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
         },
         style: ElevatedButton.styleFrom(
           foregroundColor: Colors.white,
-          // backgroundColor: Colors.blue, // Button text color
           padding: EdgeInsets.symmetric(vertical: 12, horizontal: 24),
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(15),
