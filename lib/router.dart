@@ -14,9 +14,7 @@ import 'package:gazeta/features/user_profile/screens/edit_profile_screen.dart';
 import 'package:gazeta/features/user_profile/screens/user_profile_screen.dart';
 import 'package:routemaster/routemaster.dart';
 
-// final loggedOutRoute = RouteMap(routes: {
-//   '/': (_) => const MaterialPage(child: LoginScreen()),
-// });
+
 final loggedOutRoute = RouteMap(routes: {
   '/': (_) => const MaterialPage(child: onboarding()),
   '/login': (_) => const MaterialPage(child: LoginScreen()),

@@ -49,72 +49,67 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
   @override
   Widget build(BuildContext context) {
     return Stack(
-  children: [
-    PageView(
-      controller: _controller,
       children: [
-        _buildPage(
-          text: 'Join the Discussion!',
-          imagePath: 'assets/svg/News-cuate.svg',
+        PageView(
+          controller: _controller,
+          children: [
+            _buildPage(
+              text: 'Join the Discussion!',
+              imagePath: 'assets/svg/News-cuate.svg',
+            ),
+            _buildPage(
+              imagePath: 'assets/svg/News-bro.svg',
+              text: 'Explore News!',
+            ),
+            _buildPage(
+              imagePath: 'assets/svg/News-pana.svg',
+              text: 'Discover Stories!',
+            ),
+            _buildPage(
+              imagePath: 'assets/svg/Newsletter-pana.svg',
+              text: 'Get Informed!',
+            ),
+            _buildPage(
+              imagePath: 'assets/svg/Newsletter-cuate.svg',
+              text: 'Stay Updated!',
+            ),
+          ],
         ),
-        _buildPage(
-          imagePath: 'assets/svg/News-bro.svg',
-          text: 'Explore News!',
+        Positioned(
+          top: 30,
+          right: 15,
+          child: ElevatedButton(
+            onPressed: () {
+              // Navigate to login screen
+              Routemaster.of(context).push('/login');
+            },
+            style: ElevatedButton.styleFrom(
+              padding: EdgeInsets.symmetric(vertical: 12, horizontal: 24),
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(15),
+              ),
+            ),
+            child: const Text('Skip'),
+          ),
         ),
-        _buildPage(
-          imagePath: 'assets/svg/News-pana.svg',
-          text: 'Discover Stories!',
-        ),
-        _buildPage(
-          imagePath: 'assets/svg/Newsletter-pana.svg',
-          text: 'Get Informed!',
-        ),
-        _buildPage(
-          imagePath: 'assets/svg/Newsletter-cuate.svg',
-          text: 'Stay Updated!',
+        Positioned(
+          bottom: 50,
+          left: 0,
+          right: 10,
+          child: Align(
+            alignment: Alignment(0, 0),
+            child: SmoothPageIndicator(
+              controller: _controller,
+              count: 5,
+              effect: WormEffect(
+                activeDotColor: Colors.white,
+                dotColor: const Color.fromARGB(255, 0, 0, 0),
+              ),
+            ),
+          ),
         ),
       ],
-    ),
-    Positioned(
-      top: 30,
-      right: 15,
-      child: ElevatedButton(
-        onPressed: () {
-          // Navigate to login screen
-          Routemaster.of(context).push('/login');
-        },
-        style: ElevatedButton.styleFrom(
-          foregroundColor: Colors.white,
-          padding: EdgeInsets.symmetric(vertical: 12, horizontal: 24),
-          shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(15),
-          ),
-          textStyle: TextStyle(
-            fontSize: 16,
-            fontWeight: FontWeight.bold,
-          ),
-        ),
-        child: Text('Skip'),
-      ),
-    ),
-    Positioned(
-      bottom: 50,
-      left: 0,
-      right: 10,
-      child: Align(
-        alignment: Alignment(0, 0),
-        child: SmoothPageIndicator(
-          controller: _controller,
-          count: 5,
-          effect: WormEffect(activeDotColor: Colors.white,
-          dotColor: const Color.fromARGB(255, 0, 0, 0),
-              ),
-           
-        ),
-      ),
-    ),
-  ],
-);
+    );
   }
 
   Widget _buildPage({
