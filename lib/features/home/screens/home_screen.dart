@@ -29,7 +29,7 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
   }
 
   void onPageChanged(int page) {
-    setState(( ) {
+    setState(() {
       _page = page;
     });
   }
