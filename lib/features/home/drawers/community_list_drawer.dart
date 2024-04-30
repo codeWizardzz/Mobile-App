@@ -9,7 +9,7 @@ import 'package:gazeta/models/community_model.dart';
 import 'package:routemaster/routemaster.dart';
 
 class CommunityListDrawer extends ConsumerWidget {
-  const CommunityListDrawer({super.key});
+  const CommunityListDrawer({super.key}); 
 
   void navigateToCreateCommunity(BuildContext context) {
     Routemaster.of(context).push('/create-community');
@@ -55,7 +55,7 @@ class CommunityListDrawer extends ConsumerWidget {
                       ),
                     ),
                     error: (error, stackTrace) => ErrorText(
-                      error: error.toString(),
+                      error: error.toString( ),
                     ),
                     loading: () => const Loader(),
                   ),
