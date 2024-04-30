@@ -40,7 +40,7 @@ class ProfileDrawer extends ConsumerWidget {
               ),
             ),
             const SizedBox(height: 10),
-            const Divider(),
+            const Divider( ),
             ListTile(
               title: const Text('My Profile'),
               leading: const Icon(Icons.person),
