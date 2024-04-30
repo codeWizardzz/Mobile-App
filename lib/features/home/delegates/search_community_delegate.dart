@@ -48,7 +48,7 @@ class SearchCommunityDelegate extends SearchDelegate {
             },
           ),
           error: (error, stackTrace) => ErrorText(
-            error: error.toString(),
+            error: error.toString( ),
           ),
           loading: () => const Loader(),
         );
