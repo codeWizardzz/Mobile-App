@@ -13,21 +13,24 @@ import 'package:gazeta/responsive/responsive.dart';
 import 'package:gazeta/theme/pallete.dart';
 import 'package:routemaster/routemaster.dart';
 
+/// Widget for displaying a card representing a post.
 class PostCard extends ConsumerWidget {
+  /// The post data to display.
   final Post post;
   const PostCard({
     super.key,
     required this.post,
   });
 
+   // Function to delete a post.
   void deletePost(WidgetRef ref, BuildContext context) async {
     ref.read(postControllerProvider.notifier).deletePost(post, context);
   }
-
+// Function to upvote a post.
   void upvotePost(WidgetRef ref) async {
     ref.read(postControllerProvider.notifier).upvote(post);
   }
-
+  // Function to downvote a post.
   void downvotePost(WidgetRef ref) async {
     ref.read(postControllerProvider.notifier).downvote(post);
   }
@@ -52,6 +55,7 @@ class PostCard extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
+     // Determine post type.
     final isTypeImage = post.type == 'image';
     final isTypeText = post.type == 'text';
     final isTypeLink = post.type == 'link';
@@ -71,6 +75,7 @@ class PostCard extends ConsumerWidget {
             child: Row(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
+                // Upvote, Downvote buttons for web platform.
                 if (kIsWeb)
                   Column(
                     children: [
@@ -100,6 +105,7 @@ class PostCard extends ConsumerWidget {
                       ),
                     ],
                   ),
+                // Main content of the post card.
                 Expanded(
                   child: Column(
                     children: [
@@ -152,6 +158,7 @@ class PostCard extends ConsumerWidget {
                                     ),
                                   ],
                                 ),
+                                // Delete post button for the post owner.
                                 if (post.uid == user.uid)
                                   IconButton(
                                     onPressed: () => deletePost(ref, context),
@@ -222,6 +229,7 @@ class PostCard extends ConsumerWidget {
                                   ),
                                 ),
                               ),
+                            // Action buttons: Upvote, Downvote, Comments, Awards.
                             Row(
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
                               children: [

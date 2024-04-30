@@ -4,10 +4,12 @@ import 'package:gazeta/core/constants/constants.dart';
 import 'package:gazeta/features/auth/controller/auth_controller.dart';
 import 'package:gazeta/theme/pallete.dart';
 
+/// Widget for displaying a sign-in button with Google.
 class SignInButton extends ConsumerWidget {
+  /// Indicates whether the sign-in button is from the login screen.
   final bool isFromLogin;
   const SignInButton({Key? key, this.isFromLogin = true}) : super(key: key);
-
+  /// Function to handle sign-in with Google.
   void signInWithGoogle(BuildContext context, WidgetRef ref) {
     ref
         .read(authControllerProvider.notifier)
