@@ -12,6 +12,7 @@ final communityRepositoryProvider = Provider((ref) {
   return CommunityRepository(firestore: ref.watch(firestoreProvider));
 });
 
+// Repository for handling community-related operations.
 class CommunityRepository {
   final FirebaseFirestore _firestore;
   CommunityRepository({required FirebaseFirestore firestore})

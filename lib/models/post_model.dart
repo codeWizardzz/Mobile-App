@@ -31,7 +31,7 @@ class Post {
     required this.createdAt,
     required this.awards,
   });
-
+// Creates a new [Post] object with updated fields.
   Post copyWith({
     String? id,
     String? title,
@@ -65,7 +65,7 @@ class Post {
       awards: awards ?? this.awards,
     );
   }
-
+// Converts the [Post] object to a map.
   Map<String, dynamic> toMap() {
     return {
       'id': id,

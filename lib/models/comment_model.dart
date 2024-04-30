@@ -14,6 +14,7 @@ class Comment {
     required this.profilePic,
   });
 
+// Creates a new [Comment] object with updated fields.
   Comment copyWith({
     String? id,
     String? text,
@@ -31,7 +32,7 @@ class Comment {
       profilePic: profilePic ?? this.profilePic,
     );
   }
-
+/// Converts the [Comment] object to a map.
   Map<String, dynamic> toMap() {
     return {
       'id': id,
@@ -43,6 +44,7 @@ class Comment {
     };
   }
 
+/// Creates a [Comment] object from a map.
   factory Comment.fromMap(Map<String, dynamic> map) {
     return Comment(
       id: map['id'] ?? '',

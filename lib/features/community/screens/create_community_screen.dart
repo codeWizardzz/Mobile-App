@@ -19,7 +19,7 @@ class _CreateCommunityScreenState extends ConsumerState<CreateCommunityScreen> {
     super.dispose();
     communityNameController.dispose();
   }
-
+// create community function
   void createCommunity() {
     ref.read(communityControllerProvider.notifier).createCommunity(
           communityNameController.text.trim(),

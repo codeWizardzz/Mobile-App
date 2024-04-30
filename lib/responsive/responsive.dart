@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+/// A widget that centers its child horizontally and limits its maximum width.
 class Responsive extends StatelessWidget {
   final Widget child;
   const Responsive({

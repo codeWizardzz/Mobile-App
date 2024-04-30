@@ -5,6 +5,7 @@ import 'package:gazeta/core/common/loader.dart';
 import 'package:gazeta/features/auth/controller/auth_controller.dart';
 import 'package:gazeta/features/community/controller/community_controller.dart';
 
+/// Screen for adding moderators to a community.
 class AddModsScreen extends ConsumerStatefulWidget {
   final String name;
   const AddModsScreen({
@@ -26,6 +27,7 @@ class _AddModsScreenState extends ConsumerState<AddModsScreen> {
     });
   }
 
+// Remove user ID from the set of selected moderators.
   void removeUid(String uid) {
     setState(() {
       uids.remove(uid);
