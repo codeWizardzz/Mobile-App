@@ -55,7 +55,7 @@ class CommunityListDrawer extends ConsumerWidget {
                       ),
                     ),
                     error: (error, stackTrace) => ErrorText(
-                      error: error.toString( ),
+                      error: error.toString(),
                     ),
                     loading: () => const Loader(),
                   ),
