@@ -1,6 +1,6 @@
-# gazeta
+# GazetaHub
 
-Gazeta is a Flutter project aimed at providing a modern platform for news consumption, inspired by the concept of digitalizing newspapers. This project includes a range of features designed to enhance the user experience and facilitate community engagement.
+GazetaHub is a Flutter project aimed at providing a modern platform for news consumption, inspired by the concept of digitalizing newspapers. This project includes a range of features designed to enhance the user experience and facilitate community engagement.
 
 ## Features
 
