@@ -3,6 +3,7 @@ import 'package:gazeta/features/feed/feed_screen.dart';
 import 'package:gazeta/features/home/screens/home_screen.dart';
 import 'package:gazeta/features/post/screens/add_post_screen.dart';
 
+//constant class hold some constant values like image and icon used in our project
 class Constants {
   static const logoPath = 'assets/images/logo.png';
   static const signuppath = 'assets/svg/sign up-bro.svg';

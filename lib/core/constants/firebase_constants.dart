@@ -1,3 +1,4 @@
+/// Constants related to Firebase collections.
 class FirebaseConstants {
   static const usersCollection = 'users';
   static const communitiesCollection = 'communities';

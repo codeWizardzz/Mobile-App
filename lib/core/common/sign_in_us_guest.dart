@@ -6,7 +6,7 @@ import 'package:gazeta/theme/pallete.dart';
 
 class SignInAsGuest extends ConsumerWidget {
   const SignInAsGuest({Key? key}) : super(key: key);
-
+   /// Function to handle sign-in as a guest.
   void signInAsGuest(BuildContext context, WidgetRef ref) {
     ref.read(authControllerProvider.notifier).signInAsGuest(context);
   }
