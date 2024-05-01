@@ -19,7 +19,7 @@ class SignInButton extends ConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     return Padding(
-      padding: EdgeInsets.fromLTRB(18.0, 0.0, 18.0, 0.0),
+      padding: const EdgeInsets.fromLTRB(18.0, 0.0, 18.0, 0.0),
       child: ElevatedButton.icon(
         onPressed: () => signInWithGoogle(context, ref),
         icon: Image.asset(
