@@ -6,11 +6,20 @@ GazetaHub is a Flutter project aimed at providing a modern platform for news con
 [![DEMO](https://i.ytimg.com/vi/iZTNk9p9-fY/maxresdefault.jpg)](https://www.youtube.com/watch?v=iZTNk9p9-fY "demo")  
 
 ### screenshots
-![showcase](https://github.com/codeWizardzz/Mobile-App/blob/main/zshots/a.png)
-![showcase](https://github.com/codeWizardzz/Mobile-App/blob/main/zshots/b.png)
-![showcase](https://github.com/codeWizardzz/Mobile-App/blob/main/zshots/f.jpg)
+<table>
+  <tr>
+    <td>splash screen</td>
+     <td>onboarding screen</td>
+     <td>main page</td>
+  </tr>
+  <tr>
+    <td><img src="https://github.com/codeWizardzz/Mobile-App/blob/main/zshots/a.png" width=270 height=480></td>
+    <td><img src="https://github.com/codeWizardzz/Mobile-App/blob/main/zshots/b.png" width=270 height=480></td>
+    <td><img src="https://github.com/codeWizardzz/Mobile-App/blob/main/zshots/f.jpg" width=270 height=480></td>
+  </tr>
+ </table>
+ 
 ## Features
-
 - Authentication: Users can sign in with Google or as a guest.
 - Splash Screen: Engage users right from the start with a captivating splash screen.
 - Onboarding Screen: Introduce users to the platform's features and functionalities with an interactive onboarding experience.
