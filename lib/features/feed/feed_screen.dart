@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+import 'package:flutter/material.dart'; //Importing the 'material dart'f ile from the Flutter package.
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:gazeta/core/common/error_text.dart'; // Importing the error text widget for displaying error messages.
 import 'package:gazeta/core/common/loader.dart'; // Importing the loader widget for displaying loading indicators.
