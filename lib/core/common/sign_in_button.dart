@@ -8,7 +8,7 @@ import 'package:gazeta/theme/pallete.dart';
 class SignInButton extends ConsumerWidget {
   /// Indicates whether the sign-in button is from the login screen.
   final bool isFromLogin;
-  const SignInButton({Key? key, this.isFromLogin = true}) : super(key: key);
+  const SignInButton({super.key, this.isFromLogin = true});
   /// Function to handle sign-in with Google.
   void signInWithGoogle(BuildContext context, WidgetRef ref) {
     ref
