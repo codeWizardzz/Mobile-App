@@ -1,8 +1,7 @@
 # GazetaHub
 
 GazetaHub is a Flutter project aimed at providing a modern platform for news consumption, inspired by the concept of digitalizing newspapers. This project includes a range of features designed to enhance the user experience and facilitate community engagement.
-
-[![demo](https://img.youtube.com/vi/iZTNk9p9-fY?si/0.jpg)](https://www.youtube.com/watch?v=iZTNk9p9-fY?si)
+[![DEMO](https://i.ytimg.com/vi/iZTNk9p9-fY/maxresdefault.jpg)](https://www.youtube.com/watch?v=iZTNk9p9-fY "demo")  
 ![showcase](https://github.com/codeWizardzz/Mobile-App/blob/main/zshots/g.jpg)
 ## Features
 
