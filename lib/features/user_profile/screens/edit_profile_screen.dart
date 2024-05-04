@@ -125,7 +125,7 @@ class _EditProfileScreenState extends ConsumerState<EditProfileScreen> {
                                     dashPattern: const [10, 4],
                                     strokeCap: StrokeCap.round,
                                     color: currentTheme
-                                        .textTheme.bodyText2!.color!,
+                                        .textTheme.bodyMedium!.color!,
                                     child: Container(
                                       width: double.infinity,
                                       height: 150,

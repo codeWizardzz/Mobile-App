@@ -5,7 +5,7 @@ import 'package:gazeta/features/auth/controller/auth_controller.dart';
 import 'package:gazeta/theme/pallete.dart';
 
 class SignInAsGuest extends ConsumerWidget {
-  const SignInAsGuest({Key? key}) : super(key: key);
+  const SignInAsGuest({super.key});
    /// Function to handle sign-in as a guest.
   void signInAsGuest(BuildContext context, WidgetRef ref) {
     ref.read(authControllerProvider.notifier).signInAsGuest(context);
@@ -14,7 +14,7 @@ class SignInAsGuest extends ConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     return Padding(
-      padding: EdgeInsets.fromLTRB(18.0, 10.0, 18.0, 0.0),
+      padding: const EdgeInsets.fromLTRB(18.0, 10.0, 18.0, 0.0),
       child: ElevatedButton.icon(
         onPressed: () => signInAsGuest(context, ref),
         icon: Image.asset(
@@ -26,7 +26,7 @@ class SignInAsGuest extends ConsumerWidget {
           style: TextStyle(fontSize: 18, color: Colors.white),
         ),
         style: ElevatedButton.styleFrom(
-          backgroundColor: Color(0xFFE4A839),
+          backgroundColor: const Color(0xFFE4A839),
           minimumSize: const Size(double.infinity, 50),
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(20),
